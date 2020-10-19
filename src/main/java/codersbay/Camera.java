@@ -1,5 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
+package codersbay;
+
+import codersbay.Lens;
 
 public class Camera {
 
@@ -7,8 +8,8 @@ public class Camera {
     private int megaPixels;
     private int displaySize;
     private boolean colored;
-    private int counter;
-    private int camCounter;
+    private static int counter;
+    private static int camCounter;
     private Lens lens;
 
     public Camera() {
@@ -82,12 +83,12 @@ public class Camera {
 
     @Override
     public String toString() {
-        return "Camera{" +
+        return "codersbay.Camera{" +
                 "Brand='" + brand + '\'' +
                 ", MegaPixels=" + megaPixels +
                 ", Displaysize=" + displaySize +
                 ", Colored=" + colored +
-                ", Lens=" + lens +
+                ", codersbay.Lens=" + lens +
                 '}';
     }
 }

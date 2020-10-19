@@ -1,9 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
+package codersbay;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Lens firstLens = new Lens(13, 30);
         Lens secondLens = new Lens(35, 50);

@@ -1,13 +1,15 @@
+package codersbay;
+
 public class Lens {
 
     public int lens;
     public int minFocal;
     public int maxFocal;
-    private int counterLens;
+    private static int counterLens;
 
-    public Lens(int minFocal, int maxFocal) {
+    public Lens(int minFocal, int maxFocal) throws Exception {
         if (minFocal > maxFocal) {
-            System.out.println("The minimal focal length is bigger than the maximum!");
+            throw new Exception("Max Focal to low ! (Unter Min)");
         } else {
             this.minFocal = minFocal;
             this.maxFocal = maxFocal;
@@ -18,7 +20,7 @@ public class Lens {
 
     @Override
     public String toString() {
-        return "Lens{" +
+        return "codersbay.Lens{" +
                 "Min-Focal=" + minFocal +
                 ", Max-Focal=" + maxFocal +
                 '}';
