@@ -10,6 +10,8 @@ public class Lens {
     public Lens(int minFocal, int maxFocal) throws Exception {
         if (minFocal > maxFocal) {
             throw new Exception("Max Focal to low ! (Unter Min)");
+        } else if (minFocal == maxFocal) {
+            System.out.println("Static-Objective");
         } else {
             this.minFocal = minFocal;
             this.maxFocal = maxFocal;

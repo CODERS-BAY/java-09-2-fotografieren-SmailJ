@@ -20,6 +20,7 @@ public class MainTest {
         assertEquals(3, nikonD3100.getDisplaySize());
         assertTrue(nikonD3100.isColored());
         assertEquals(firstLens, nikonD3100.getLens());
+
     }
 
     @Test
